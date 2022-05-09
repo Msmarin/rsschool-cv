@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Keyboard</title>
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+       <div class="keyboard">
+       <h1>make on win10</h1>
+       <textarea class="display" id="display"  autofocus=""> </textarea>
+   
+          <div class="buttons">
+             <div class="section__1">
+    
+                <button onclick="funcAdd1()" data-code="Backquote" class="key">`<sup>~</sup></button>
+                <button onclick="func1()" data-code="Digit1" class="key">1<sup>!</sup></button>
+                <button onclick="func2()" data-code="Digit2" class="key">2<sup>@</sup></button>
+                <button onclick="func3()" data-code="Digit3" class="key">3<sup>#</sup></button>
+                <button onclick="func4()" data-code="Digit4"class="key">4<sup>$</sup></button>
+                <button onclick="func5()" data-code="Digit5" class="key">5<sup>%</sup></button>
+                <button onclick="func6()" data-code="Digit6" class="key">6<sup>:</sup></button>
+                <button onclick="func7()" data-code="Digit7" class="key">7<sup>?</sup></button>
+                <button onclick="func8()" data-code="Digit8" class="key">8<sup>*</sup></button>
+                <button onclick="func9()" data-code="Digit9" class="key">9<sup>(</sup></button>
+                <button onclick="func0()" data-code="Digit10" class="key">0<sup>)</sup></button>
+                <button onclick="funcAdd2()" data-code="NumpadSubtract" class="key">-<sup>_</sup></button>
+                <button onclick="funcAdd3()" data-code="Equal" class="key">=<sup>+</sup></button>
+                <button onclick="funcBack()" data-code="Backspace" class="key backspace">BackSpace</button>
+    
+             </div>
+    
+             <div class="section__2">
+                <button onclick="funcTab()" data-code="Tab" class="key tab">Tab</button>
+                <button onclick="funcq()" data-code="KeyQ" class="key">q<sup>Q</sup></button>
+                <button onclick="funcw()" data-code="KeyW" class="key">w<sup>W</sup></button>
+                <button onclick="funce()" data-code="KeyE" class="key">e<sup>E</sup></button>
+                <button onclick="funcr()" data-code="KeyR" class="key">r<sup>R</sup></button>
+                <button onclick="funct()" data-code="KeyT" class="key">t<sup>T</sup></button>
+                <button onclick="funcy()" data-code="KeyY" class="key">y<sup>Y</sup></button>
+                <button onclick="funcu()" data-code="KeyU" class="key">u<sup>U</sup></button>
+                <button onclick="funci() "data-code="KeyI" class="key">i<sup>I</sup></button>
+                <button onclick="funco()" data-code="KeyO" class="key">o<sup>O</sup></button>
+                <button onclick="funcp()" data-code="KeyP" class="key">p<sup>P</sup></button>
+                <button onclick="funcAdd4()" data-code="BracketLeft" class="key">[<sup>{</sup></button>
+                <button onclick="funcAdd5()" data-code="BracketRight" class="key">]<sup>}</sup></button>
+                <button onclick="funcAdd6()" data-code="Backslash" class="key">\<sup>/</sup></button>
+                <button onclick="funcDel()" data-code="NumpadDecimal" class="key">Del</button>
+             </div>
+             <div class="section__3">
+                <button onclick="funcCL()" data-code="CapsLock" class="key capslock">CapsLock</button>
+                <button onclick="funca()" data-code="KeyA" class="key">a<sup>A</sup></button>
+                <button onclick="funcs()"data-code="KeyS" class="key">s<sup>S</sup></button>
+                <button onclick="funcd()" data-code="KeyD" class="key">d<sup>D</sup></button>
+                <button onclick="funcf()" data-code="KeyF" class="key">f<sup>F</sup></button>
+                <button onclick="funcg()" data-code="KeyG" class="key">g<sup>G</sup></button>
+                <button onclick="funch()" data-code="KeyH" class="key">h<sup>H</sup></button>
+                <button onclick="funcj()" data-code="KeyJ" class="key">j<sup>J</sup></button>
+                <button onclick="funck()" data-code="KeyK" class="key">k<sup>K</sup></button>
+                <button onclick="funcl()" data-code="KeyL" class="key">l<sup>L</sup></button>
+                <button onclick="funcAdd7()" data-code="Semicolon" class="key">;<sup>:</sup></button>
+                <button onclick="funcAdd8()" data-code="Quote" class="key">'<sup>"</sup></button>
+                <button onclick="funcEnter()" data-code="Enter" class="key enter">Enter</button>
+             </div>
+             <div class="section__4">
+                <button onclick="funcShift()" data-code="ShiftLeft" class="key shift__l">Shift</button>
+                <button onclick="funcAdd9()" data-code="Backslash" class="key">\</button>
+                <button onclick="funcz()" data-code="KeyZ" class="key">z<sup>Z</sup></button>
+                <button onclick="funcx()" data-code="KeyX" class="key">x<sup>X</sup></button>
+                <button onclick="funcc()" data-code="KeyC" class="key">c<sup>C</sup></button>
+                <button onclick="funcv()" data-code="KeyV" class="key">v<sup>V</sup></button>
+                <button onclick="funcb()" data-code="KeyB" class="key">b<sup>B</sup></button>
+                <button onclick="funcn()" data-code="KeyN" class="key">n<sup>N</sup></button>
+                <button onclick="funcm()" data-code="KeyM" class="key">m<sup>M</sup></button>
+                <button onclick="funcAdd10()" data-code="Period" class="key">.<sup> &lsaquo;</sup></button>
+                <button onclick="funcAdd11()" data-code="NumpadDecimal" class="key">,<sup>&rsaquo;</sup></button>
+                <button onclick="funcAdd12()" data-code="Slash" class="key">/</button>
+                <button onclick="funcArrow1()" data-code="ArrowUp" class="key">▲</button>
+                <button onclick="funcShift()" data-code="ShiftLeft" class="key shift__r">Shift</button>
+             </div>
+    
+             <div class="section__5">
+                <button onclick="funcCtrl()" data-code="ControlLeft" class="key ctrl">Ctrl</button>
+                <button onclick="funcWin()" data-code="MetaLeft" class="key win">Win</button>
+                <button onclick="funcAltL()" data-code="AltLeft" class="key alt">Alt</button>
+                <button onclick="funcSpace()" data-code="Space" class="space">Space</button>
+                <button onclick="funcAltR()" data-code="AltLeft" class="key alt">Alt</button>
+                <button onclick="funcCtrl()" data-code="ControlLeft" class="key ctrl">Ctrl</button>
+                <button onclick="funcArrow2()" data-code="ArrowLeft" class="key">◄</button>
+                <button onclick="funcArrow3()" data-code="ArrowDown" class="key">▼</button>
+                <button onclick="funcArrow4()" data-code="ArrowRight" class="key">►</button>
+    
+    
+             </div>
+    
+          </div>
+       </input>
+       <script src="./src/js/app.js">   </script>
+</body>
+
+</html>
